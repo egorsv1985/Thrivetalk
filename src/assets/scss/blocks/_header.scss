@@ -1,7 +1,79 @@
 .header {
 	background-color: #F4F9E2;
+	width: 100%;
+	height: 100vh;
 
-	display: grid;
-	min-width: 1440px;
-	height: 840px;
+	// .header__top
+	&__top {
+		@include flex (space-between, center);
+	}
+
+	// .header__subtitle
+	&__subtitle {
+		@include font (24px, 27px, false, false);
+		letter-spacing: -0.035em;
+		color: #62D0DF;
+	}
+
+	// .header__nav
+	&__nav {}
+
+	// .header__btn
+	&__btn {}
+
+	// .header__content
+	&__content {
+		@include flex ();
+
+	}
+
+	// .header__wrap
+	&__wrap {
+		@include flex (space-between, flex-start, wrap, column);
+	}
+
+	// .header__title
+	&__title {
+		@include font (48px, 53px, false, false);
+		letter-spacing: -0.035em;
+		color: #22356F;
+	}
+
+	// .header__text
+	&__text {}
+
+	// .header__link
+	&__link {}
+
+	// .header__img-box
+	&__img-box {}
+
+	// .header__img
+	&__img {}
 }
+
+.nav {
+
+	// .nav__list
+	&__list {}
+
+	// .nav__item
+	&__item {}
+
+	// .nav__link
+	&__link {}
+}
+
+.btn {}
+
+.btn--bg-blue {}
+
+.title {}
+
+.text {}
+
+.btn--bg-orange {}
+
+.text--white {}
+
+.text--orange {}

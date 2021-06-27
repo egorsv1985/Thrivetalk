@@ -1,0 +1,19 @@
+
+.box {
+	// .box__item
+	&__item {}
+	// .box__item--dark-blue
+	&__item--dark-blue {}
+	// .box__subtitle
+	&__subtitle {}
+	// .box__item--blue
+	&__item--blue {}
+	// .box__item--purple
+	&__item--purple {}
+	// .box__item--light-blue
+	&__item--light-blue {}
+	// .box__item--light-purple
+	&__item--light-purple {}
+	// .box__item--dark-purple
+	&__item--dark-purple {}
+}

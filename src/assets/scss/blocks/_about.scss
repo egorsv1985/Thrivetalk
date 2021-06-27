@@ -1,7 +1,7 @@
-.about {
-	background-color: #fff;
 
-	display: grid;
-	width: 500px;
-	height: 500px;
-	}
+.about {
+	// .about__title
+	&__title {}
+	// .about__text
+	&__text {}
+}

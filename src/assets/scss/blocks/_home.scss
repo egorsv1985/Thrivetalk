@@ -1,5 +1,13 @@
-.thrive {
-	background-color: #62D0DF;
 
-	display: grid;
+.home {
+	// .home__wraper
+	&__wraper {}
+	// .home__title
+	&__title {}
+	// .home__text
+	&__text {}
+	// .home__text--bold
+	&__text--bold {}
+	// .home__img
+	&__img {}
 }

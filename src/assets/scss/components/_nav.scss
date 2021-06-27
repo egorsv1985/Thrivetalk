@@ -1,0 +1,22 @@
+.nav {
+
+	// max-width: 233px;
+
+	// .nav__list
+	&__list {
+		@include flex (space-between, center);
+	}
+
+	// .nav__item
+	// &__item {}
+
+	&__item+&__item {
+		margin-left: 25px;
+	}
+
+	// .nav__link
+	&__link {
+		@include font (14px, 16px, false, false);
+		color: #22356F;
+	}
+}

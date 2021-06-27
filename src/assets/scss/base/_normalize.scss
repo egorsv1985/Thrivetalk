@@ -27,10 +27,10 @@ html {
  
 }
 body {
- height: 100vh;
-  font-family:  "Britannic-bold", sans-serif;
-  @include flex (center, center);
-  color: #fff; 
+ 
+  font-family:  "Larsseit", sans-serif;
+  
+   
  }
 
 /* проблема переполнения */
@@ -204,7 +204,7 @@ sup {
 
 img {
   border-style: none;
-  width: 15px;
+ 
 }
 
 /* Forms

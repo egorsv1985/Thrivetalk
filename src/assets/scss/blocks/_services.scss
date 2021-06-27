@@ -1,0 +1,39 @@
+.future {
+	display: grid;
+
+	&__item-1 {
+		background-color: #FFE2DE;
+	}
+	&__item-2 {
+		background-color: #C4E769;
+	}
+	&__item-3 {
+		background-color: #62D0DF;
+	}
+	&__item-4 {
+		background-color: #0052C1;
+	}
+}
+
+.services {
+	// .services__title
+	&__title {}
+	// .services__grid
+	&__grid {}
+	// .services__item
+	&__item {}
+	// .services__item--pink
+	&__item--pink {}
+	// .services__subtitle
+	&__subtitle {}
+	// .services__item--green
+	&__item--green {}
+	// .services__item--blue
+	&__item--blue {}
+	// .services__item--dark-blue
+	&__item--dark-blue {}
+	// .services__box
+	&__box {}
+	// .services__info
+	&__info {}
+}

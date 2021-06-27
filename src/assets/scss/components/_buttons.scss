@@ -1,0 +1,10 @@
+
+.btn {
+	@include wh (150px, 50px);
+	&--bg-orange {
+		background: #F9B640;
+	}
+	&--bg-blue {
+		background: #62D0DF;
+	}
+}

@@ -1,3 +1,12 @@
 .contacts {
-	display: grid;
+	// .contacts__title
+	&__title {}
+	// .contacts__grid
+	&__grid {}
+	// .contacts__subtitlee
+	&__subtitlee {}
+	// .contacts__text
+	&__text {}
+	// .contacts__link
+	&__link {}
 }
