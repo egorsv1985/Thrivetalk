@@ -390,6 +390,17 @@ template {
     text-align: false;
     letter-spacing: -0.035em;
     color: #22356F; }
+  .header__img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("assets/images/header/headerBackground.svg");
+    width: 743px;
+    height: 824px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1; }
 
 .future {
   display: grid; }

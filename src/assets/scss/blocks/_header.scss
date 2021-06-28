@@ -49,7 +49,12 @@
 	&__img-box {}
 
 	// .header__img
-	&__img {}
+	&__img {
+		@include background ($img: url("assets/images/header/headerBackground.svg"));
+		@include wh (743px, 824px);
+		@include pos (absolute, 0, 0);
+	z-index: 1;
+	}
 }
 
 .nav {
