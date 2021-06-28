@@ -23,15 +23,15 @@
 		}
 	}
 
-	// .header__nav
-	&__nav {}
+	
 
 	// .header__btn
 	&__btn {
 		@include flex (center, center);
 		@include wh (150px, 50px);
 		@include font (14px, 16px, false, false);
-		color: #fff;
+		background-color: #62D0DF;
+		
 		border-radius: 50px;
 	}
 
@@ -70,7 +70,7 @@
 			display: block;
 			@include wh (150px, 50px);
 			background: #F9B640;
-			color: #fff;
+			
 			@include flex (center, center);
 		}
 

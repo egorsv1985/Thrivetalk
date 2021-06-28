@@ -1,13 +1,29 @@
-
 .home {
+	background-color: #62D0DF;
+
 	// .home__wraper
-	&__wraper {}
+	&__wraper {
+		@include flex ();
+
+	}
+
+	&__wrap {
+		max-width: 914px;
+		margin: 160px 165px 75px;
+	}
+
 	// .home__title
-	&__title {}
+	&__title {
+		@include font (36px, 27px, false, false);
+		letter-spacing: -0.006em;
+		margin-bottom: 95px;
+	}
+
 	// .home__text
-	&__text {}
-	// .home__text--bold
-	&__text--bold {}
+	&__text {
+		@include font (20px, 35px, false, false);
+	}
+
 	// .home__img
 	&__img {}
 }

@@ -5,6 +5,15 @@
 
 @import "./base/fonts";
 
+
+// components
+@import "./components/nav";
+@import "./components/title";
+@import "./components/text";
+// @import "./components/box";
+// @import "./components/info";
+
+// block
 @import "./blocks/header";
 @import "./blocks/home";
 @import "./blocks/about";
@@ -15,10 +24,4 @@
 
 
 
-// components
-@import "./components/nav";
-@import "./components/title";
-@import "./components/text";
-// @import "./components/box";
-// @import "./components/info";
 

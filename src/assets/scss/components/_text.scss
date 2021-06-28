@@ -16,4 +16,8 @@
 	&--orange {
 		color: #FAB63E;
 	}
+	&--bold {
+		@include font (24px, false, 700, false);
+	}
+
 }
