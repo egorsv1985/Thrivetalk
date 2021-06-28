@@ -1,11 +1,14 @@
 .header {
 	background-color: #F4F9E2;
-	width: 100%;
-	height: 100vh;
+	min-width: 100%;
+	min-height: 100vh;
 
 	// .header__top
 	&__top {
+		padding-top: 18px;
 		@include flex (space-between, center);
+		margin-bottom: 175px;
+
 	}
 
 	// .header__subtitle
@@ -13,51 +16,94 @@
 		@include font (24px, 27px, false, false);
 		letter-spacing: -0.035em;
 		color: #62D0DF;
+		margin-bottom: 42px;
+
+		&--up {
+			margin-bottom: 0;
+		}
 	}
 
 	// .header__nav
 	&__nav {}
 
 	// .header__btn
-	&__btn {}
+	&__btn {
+		@include flex (center, center);
+		@include wh (150px, 50px);
+		@include font (14px, 16px, false, false);
+		color: #fff;
+		border-radius: 50px;
+	}
 
 	// .header__content
-	&__content {
-		@include flex ();
 
-	}
 
 	// .header__wrap
 	&__wrap {
-		@include flex (space-between, flex-start, wrap, column);
+		@include flex ($fd: column);
+		max-width: 495px;
 	}
 
 	// .header__title
 	&__title {
-		@include font (48px, 53px, false, false);
-		letter-spacing: -0.035em;
+
 		color: #22356F;
+		margin-bottom: 70px;
 	}
 
 	// .header__text
-	&__text {}
+	&__text {
+		margin-bottom: 50px;
+	}
+&__inner {
+	@include flex (space-between, center, wrap);
+	max-width: 315px;
+}
 
 	// .header__link
-	&__link {}
+	&__link {
+		@include font (16px, 23px, false, center);
+		letter-spacing: 0.1em;
 
+		// .header__link--bg-orange
+		&--bg-orange {
+			display: block;
+			@include wh (150px, 50px);
+			background: #F9B640;
+			color: #fff;
+			@include flex (center, center);
+		}
+
+		// .header__link--orange
+		&--orange {
+			color: #FAB63E;
+		}
+	}
 	// .header__img-box
-	&__img-box {}
+	&__img-box {
+		// position: relative;
+
+		& ::before {
+			@include pseudo;
+			@include background ($img: url("../images/header/headerBackground.svg"));
+			@include wh (704px, 802px);
+			@include pos (relative, $t: 0, $r: 0);
+		}
+	}
 
 	// .header__img
 	&__img {
-		@include background ($img: url("assets/images/header/headerBackground.svg"));
+
 		@include wh (743px, 824px);
-		@include pos (absolute, 0, 0);
-	z-index: 1;
+		@include pos (absolute, $t: 0, $r:-20px);
+
+		z-index: 1;
+
 	}
 }
 
 .nav {
+
 
 	// .nav__list
 	&__list {}

@@ -1,5 +1,13 @@
 .text {
-	&--blue {}
+
+	@include font (24px, 44px, false, false);
+&--darkblue {
+	color: #22356F;
+
+}
+	&--blue {
+		
+	}
 
 	&--white {
 		color: #FFF;

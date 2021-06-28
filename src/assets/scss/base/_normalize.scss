@@ -8,13 +8,13 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- *,
- *::after,
- *::before {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
- }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html {
   line-height: 1.15;
@@ -23,15 +23,19 @@ html {
   /* 2 */
 
   font-size: 100%;
-  
- 
+
+
 }
+
 body {
- 
-  font-family:  "Larsseit", sans-serif;
-  
-   
- }
+  font-family: "Larsseit", sans-serif;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
 /* проблема переполнения */
 // * {
@@ -70,9 +74,10 @@ h6 {
  */
 
 img {
-	display: block;
- 
+  display: block;
+
 }
+
 main {
   display: block;
 }
@@ -82,10 +87,6 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
 
 /* Grouping content
    ========================================================================== */
@@ -204,7 +205,7 @@ sup {
 
 img {
   border-style: none;
- 
+
 }
 
 /* Forms
@@ -219,6 +220,7 @@ button {
   border: none;
   cursor: pointer;
 }
+
 button,
 input,
 optgroup,

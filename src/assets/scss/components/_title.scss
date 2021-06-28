@@ -1,2 +1,4 @@
 .title {
+	@include font (48px, 53px, false, false);
+	letter-spacing: -0.035em;
 }

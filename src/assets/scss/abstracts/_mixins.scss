@@ -30,19 +30,19 @@
 
 
 @mixin font ($font-size: $font-size, $line-height: $line-height, $font-weight: $font-weight, $text-align: $text-align) {
-	@if font-size {
+	@if $font-size {
 		font-size: $font-size;
 	}
 
-	@if line-height {
+	@if $line-height {
 		line-height: $line-height;
 	}
 
-	@if font-weight {
+	@if $font-weight {
 		font-weight: $font-weight;
 	}
 
-	@if text-align {
+	@if $text-align {
 		text-align: $text-align;
 	}
 }
