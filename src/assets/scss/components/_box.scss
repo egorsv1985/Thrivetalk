@@ -3,17 +3,30 @@
 	// .box__item
 	&__item {}
 	// .box__item--dark-blue
-	&__item--dark-blue {}
+	&__item--dark-blue {
+		background-color: #22356F;
+	}
 	// .box__subtitle
-	&__subtitle {}
+	&__subtitle {
+		@include font (32px, 34px, 700, center);
+		letter-spacing: -0.006em;
+		position: relative;
+
+		&::after {
+			@include pseudo;
+			@include wh (9px);
+			@include pos (absolute, $t: 15px, $l: 45px);
+			border-radius: 50%;
+			background-color: #E9B730;
+		}
+
+		&::before {
+			@include pseudo;
+			@include wh (255px, 1px);
+			@include pos (absolute, $t: -25px, $l: 55px);
+			background-color: #fff;
+		}
+	}
 	// .box__item--blue
-	&__item--blue {}
-	// .box__item--purple
-	&__item--purple {}
-	// .box__item--light-blue
-	&__item--light-blue {}
-	// .box__item--light-purple
-	&__item--light-purple {}
-	// .box__item--dark-purple
-	&__item--dark-purple {}
+	
 }

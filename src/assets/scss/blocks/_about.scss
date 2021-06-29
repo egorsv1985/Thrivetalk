@@ -3,7 +3,7 @@
 	// .about__wrap
 	&__wrap {
 		@include flex ();
-		margin: 150px 0 75px 90px;
+		margin: 153px 0 70px 80px;
 		max-width: 900px;
 	}
 
@@ -12,7 +12,10 @@
 		@include font (16px, 23px, 400, false);
 		letter-spacing: 0.06em;
 		width: 450px;
-		margin-right: 225px;
+		margin-right: 235px;
+		text-transform: uppercase;
+		white-space: nowrap;
+
 		}
 
 	// .about__text

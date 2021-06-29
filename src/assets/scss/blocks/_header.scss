@@ -2,10 +2,14 @@
 	background-color: #F4F9E2;
 	min-width: 100%;
 	min-height: 100vh;
+	position: relative;
+
+	// @include background ($img: url("../images/header/header__bg.jpg"));
+	// background-position: 50px 100px;
 
 	// .header__top
 	&__top {
-		padding-top: 18px;
+		padding: 20px 0px 0px 0;
 		@include flex (space-between, center);
 		margin-bottom: 175px;
 
@@ -16,14 +20,14 @@
 		@include font (24px, 27px, 500, false);
 		letter-spacing: -0.035em;
 		color: #62D0DF;
-		margin-bottom: 42px;
+		margin-bottom: 40px;
 
 		&--up {
 			margin-bottom: 0;
 		}
 	}
 
-	
+
 
 	// .header__btn
 	&__btn {
@@ -31,46 +35,52 @@
 		@include wh (150px, 50px);
 		@include font (14px, 16px, false, false);
 		background-color: #62D0DF;
-		
+		z-index: 10;
+
 		border-radius: 50px;
 	}
 
 	// .header__content
-
+&__wrapper {
+	display: flex;
+}
 
 	// .header__wrap
 	&__wrap {
 		@include flex ($fd: column);
-		max-width: 495px;
+		max-width: 490px;
+		// padding-left: 50px;
 	}
 
 	// .header__title
 	&__title {
+		text-transform: uppercase;
 
 		color: #22356F;
-		margin-bottom: 70px;
+		margin-bottom: 68px;
 	}
 
 	// .header__text
 	&__text {
 		margin-bottom: 50px;
 	}
-&__inner {
-	@include flex (space-between, center, wrap);
-	max-width: 315px;
-}
+
+	&__inner {
+		@include flex (space-between, center, wrap);
+		max-width: 315px;
+	}
 
 	// .header__link
 	&__link {
 		@include font (16px, 23px, false, center);
 		letter-spacing: 0.1em;
+		text-transform: uppercase;
 
 		// .header__link--bg-orange
 		&--bg-orange {
 			display: block;
 			@include wh (150px, 50px);
 			background: #F9B640;
-			
 			@include flex (center, center);
 		}
 
@@ -79,25 +89,29 @@
 			color: #FAB63E;
 		}
 	}
+
 	// .header__img-box
 	&__img-box {
-		// position: relative;
-
-		& ::before {
-			@include pseudo;
-			@include background ($img: url("../images/header/headerBackground.svg"));
-			@include wh (704px, 802px);
-			@include pos (relative, $t: 0, $r: 0);
-		}
+		
+		// &::before {
+		// 	@include pseudo;
+		// 	@include background ($img: url("../images/header/headerBackground.svg"));
+		// 	@include wh (704px, 802px);
+		// 	@include pos (absolute, $t: -130px, $r: -250px);
+		// }
 	}
+
+	
 
 	// .header__img
 	&__img {
+		&:first-child {
+			z-index: 1;
+		}
 
 		@include wh (743px, 824px);
-		@include pos (absolute, $t: 0, $r:-20px);
+		@include pos (absolute, $t:0, $r:0);
 
-		z-index: 1;
-
+		// z-index: 1;
 	}
 }

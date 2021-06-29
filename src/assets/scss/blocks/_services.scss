@@ -1,39 +1,102 @@
-.future {
-	display: grid;
+.services {
+	margin: 0 auto;
 
-	&__item-1 {
+	// .services__title
+	&__title {
+		@include font (16px, 19px, 400, center);
+		color: rgba(34, 53, 111, 0.5);
+		margin-bottom: 24px;
+		letter-spacing: 0.06em;
+	}
+
+	// .services__grid
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 360px;
+		margin-bottom: 120px;
+	}
+
+	// .services__item
+	&__item {
+		padding: 95px 0 0;
+	}
+
+	// .services__subtitle
+	&__subtitle {
+		@include font (32px, 34px, 700);
+		letter-spacing: -0.006em;
+		position: relative;
+		margin: 0 0px 0 78px;
+		max-width: 250px;
+
+		&::after {
+			@include pseudo;
+			@include wh (9px);
+			@include pos (absolute, $t: 15px, $l: 45px);
+			border-radius: 50%;
+			background-color: #E9B730;
+		}
+
+		&::before {
+			@include pseudo;
+			@include wh (255px, 1px);
+			@include pos (absolute, $t: -25px, $l: 55px);
+			background-color: #fff;
+		}
+	}
+
+	// .services__item--pink
+	&__item--pink {
 		background-color: #FFE2DE;
 	}
-	&__item-2 {
+
+	// .services__item--green
+	&__item--green {
 		background-color: #C4E769;
 	}
-	&__item-3 {
+
+	// .services__item--blue
+	&__item--blue {
 		background-color: #62D0DF;
 	}
-	&__item-4 {
+
+	// .services__item--dark-blue
+	&__item--dark-blue {
 		background-color: #0052C1;
 	}
-}
 
-.services {
-	// .services__title
-	&__title {}
-	// .services__grid
-	&__grid {}
-	// .services__item
-	&__item {}
-	// .services__item--pink
-	&__item--pink {}
-	// .services__subtitle
-	&__subtitle {}
-	// .services__item--green
-	&__item--green {}
-	// .services__item--blue
-	&__item--blue {}
-	// .services__item--dark-blue
-	&__item--dark-blue {}
-	// .services__box
-	&__box {}
-	// .services__info
-	&__info {}
+
+	&__box {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 480px);
+	}
+
+	// &__item--blue {
+	// 	background-color: #0052C1;
+	// }
+
+	&__item--green {
+		background-color: #76B58B;
+	}
+
+	&__item--light-blue {
+		background-color: #62D0DF;
+	}
+
+	&__item--light-purple {
+		background-color: #DEE1FF;
+	}
+
+	&__item--dark-purple {
+		background-color: #8F00FF;
+	}
+
+	&__info {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 240px);
+	}
+
 }
