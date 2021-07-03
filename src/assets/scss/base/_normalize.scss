@@ -39,9 +39,9 @@ body {
 }
 
 /* проблема переполнения */
-* {
-	outline: solid 1px red;
-} 
+// * {
+// 	outline: solid 1px red;
+// } 
 
 /* Sections
    ========================================================================== */
@@ -73,7 +73,7 @@ h6 {
 /**
  * Render the `main` element consistently in IE.
  */
-
+a,
 img {
   display: block;
 
