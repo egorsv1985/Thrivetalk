@@ -30,6 +30,9 @@ body {
   padding: 0 10px; }
 
 /* проблема переполнения */
+* {
+  outline: solid 1px red; }
+
 /* Sections
    ========================================================================== */
 /**
@@ -506,7 +509,8 @@ template {
   letter-spacing: 0.005em; }
 
 .services {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 0 35px; }
   .services__title {
     font-size: 16px;
     line-height: 19px;
@@ -616,5 +620,41 @@ template {
     line-height: 25px;
     letter-spacing: -0.03em;
     color: rgba(34, 53, 111, 0.5); }
+
+.blog__grid {
+  display: grid;
+  grid-template-columns: 480px 838px;
+  grid-template-rows: 800px;
+  gap: 105px; }
+
+.blog__wraper {
+  display: flex;
+  flex-direction: column;
+  padding: 110px 0 0; }
+
+.blog__title {
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0.06em;
+  color: #22356F;
+  margin-bottom: 225px; }
+
+.blog__text {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #22356F;
+  max-width: 675px;
+  margin-bottom: 145px; }
+  .blog__text--blue {
+    color: #6CD3E1; }
+
+.blog__link {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #FAB63E; }
 
 /*# sourceMappingURL=style.min.css.map */
