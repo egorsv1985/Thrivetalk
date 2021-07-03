@@ -19,21 +19,21 @@
 
 	// .services__block-item
 	&__block-item {
-		padding: 95px 0 0;
+		padding: 100px 75px 0;
 	}
 
 	// .services__subtitle
 	&__block-subtitle {
-		@include font (32px, 34px, 700, false);
+		@include font (32px, 36px, 700, false);
 		letter-spacing: -0.006em;
 		position: relative;
-		margin: 0 0px 0 78px;
-		max-width: 250px;
+
 
 		&::after {
 			@include pseudo;
 			@include wh (9px);
-			@include pos (absolute, $t: 15px, $l: 45px);
+			@include pos (absolute, $t: 10px, $l: -25px);
+
 			border-radius: 50%;
 			background-color: #E9B730;
 		}
@@ -41,7 +41,7 @@
 		&::before {
 			@include pseudo;
 			@include wh (255px, 1px);
-			@include pos (absolute, $t: -25px, $l: 55px);
+			@include pos (absolute, $t: -25px, $l: -25px);
 			background-color: #fff;
 		}
 	}
@@ -78,26 +78,27 @@
 		@include font (32px, 34px, 700, false);
 		letter-spacing: -0.006em;
 		position: relative;
+		max-width: 200px;
 
 		&::after {
 			@include pseudo;
-			@include wh (9px);
-			@include pos (absolute, $t: 15px, $l: 45px);
+			@include wh (12px);
+			@include pos (absolute, $t: 13px, $l: -28px);
 			border-radius: 50%;
 			background-color: #E9B730;
 		}
 
 		&::before {
 			@include pseudo;
-			@include wh (255px, 1px);
-			@include pos (absolute, $t: -25px, $l: 55px);
+			@include wh (340px, 2px);
+			@include pos (absolute, $t: -35px, $l: -30px);
 			background-color: #fff;
 		}
 	}
 
 	// .services__box-item
 	&__box-item {
-		padding: 95px 0 0;
+		padding: 135px 100px 0;
 	}
 
 	// .services__box-item--dark-blue
@@ -129,4 +130,35 @@
 	&__box-item--dark-purple {
 		background-color: #8F00FF;
 	}
+
+	// .services__info
+	&__info {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 240px);
+	}
+
+	// .services__info-item
+	&__info-item {
+		padding: 80px 85px 0 105px;;
+	}
+
+	// .services__info-subtitle
+	&__info-subtitle {
+		@include font (28px, 33px, false, false);
+		letter-spacing: -0.03em;
+		color: #22356F;
+		margin-bottom: 30px;
+
+
+	}
+
+	// .services__info-text
+	&__info-text {
+		@include font (16px, 25px, false, false);
+		letter-spacing: -0.03em;
+		color: rgba(34, 53, 111, 0.5);
+	}
+
+
 }

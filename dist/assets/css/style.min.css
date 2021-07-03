@@ -521,23 +521,21 @@ template {
     grid-template-rows: 360px;
     margin-bottom: 120px; }
   .services__block-item {
-    padding: 95px 0 0; }
+    padding: 100px 75px 0; }
   .services__block-subtitle {
     font-size: 32px;
-    line-height: 34px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: -0.006em;
-    position: relative;
-    margin: 0 0px 0 78px;
-    max-width: 250px; }
+    position: relative; }
     .services__block-subtitle::after {
       content: "";
       display: block;
       width: 9px;
       height: 9px;
       position: absolute;
-      top: 15px;
-      left: 45px;
+      top: 10px;
+      left: -25px;
       border-radius: 50%;
       background-color: #E9B730; }
     .services__block-subtitle::before {
@@ -547,7 +545,7 @@ template {
       height: 1px;
       position: absolute;
       top: -25px;
-      left: 55px;
+      left: -25px;
       background-color: #fff; }
   .services__block-item--pink {
     background-color: #FFE2DE; }
@@ -566,28 +564,29 @@ template {
     line-height: 34px;
     font-weight: 700;
     letter-spacing: -0.006em;
-    position: relative; }
+    position: relative;
+    max-width: 200px; }
     .services__box-subtitle::after {
       content: "";
       display: block;
-      width: 9px;
-      height: 9px;
+      width: 12px;
+      height: 12px;
       position: absolute;
-      top: 15px;
-      left: 45px;
+      top: 13px;
+      left: -28px;
       border-radius: 50%;
       background-color: #E9B730; }
     .services__box-subtitle::before {
       content: "";
       display: block;
-      width: 255px;
-      height: 1px;
+      width: 340px;
+      height: 2px;
       position: absolute;
-      top: -25px;
-      left: 55px;
+      top: -35px;
+      left: -30px;
       background-color: #fff; }
   .services__box-item {
-    padding: 95px 0 0; }
+    padding: 135px 100px 0; }
   .services__box-item--dark-blue {
     background-color: #22356F; }
   .services__box-item--blue {
@@ -600,5 +599,22 @@ template {
     background-color: #DEE1FF; }
   .services__box-item--dark-purple {
     background-color: #8F00FF; }
+  .services__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 240px); }
+  .services__info-item {
+    padding: 80px 85px 0 105px; }
+  .services__info-subtitle {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+    color: #22356F;
+    margin-bottom: 30px; }
+  .services__info-text {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: rgba(34, 53, 111, 0.5); }
 
 /*# sourceMappingURL=style.min.css.map */
