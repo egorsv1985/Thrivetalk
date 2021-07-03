@@ -623,7 +623,7 @@ template {
 
 .blog__grid {
   display: grid;
-  grid-template-columns: 480px 838px;
+  grid-template-columns: 480px 1fr;
   grid-template-rows: 800px;
   gap: 105px; }
 
@@ -656,5 +656,40 @@ template {
   font-weight: 700;
   letter-spacing: 0.1em;
   color: #FAB63E; }
+
+.contacts__grid {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  grid-template-rows: 800px; }
+
+.contacts__wrapper {
+  background-color: #22356F;
+  padding: 110px 0 0 180px; }
+
+.contacts__title {
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0.06em;
+  margin-bottom: 222px; }
+
+.contacts__subtitlee {
+  font-size: 64px;
+  line-height: 94px;
+  font-weight: 700;
+  margin-bottom: 50px; }
+
+.contacts__text {
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.005em;
+  margin-bottom: 80px;
+  max-width: 550px; }
+
+.contacts__link {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #62D0DF; }
 
 /*# sourceMappingURL=style.min.css.map */

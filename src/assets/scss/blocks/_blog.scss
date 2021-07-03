@@ -2,7 +2,7 @@
 	// .blog__grid
 	&__grid {
 		display: grid;
-		grid-template-columns: 480px 838px;
+		grid-template-columns: 480px 1fr;
 		grid-template-rows: 800px;
 		gap: 105px;
 	}
