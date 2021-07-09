@@ -4,7 +4,7 @@
 
 	// .services__title
 	&__title {
-		@include font (16px, 19px, 400, center);
+		@include font (16px, 1.2, 400, center);
 		color: rgba(34, 53, 111, 0.5);
 		margin-bottom: 24px;
 		letter-spacing: 0.06em;
@@ -25,7 +25,7 @@
 
 	// .services__subtitle
 	&__block-subtitle {
-		@include font (32px, 36px, 700, false);
+		@include font (32px, 36px, 700);
 		letter-spacing: -0.006em;
 		position: relative;
 
@@ -33,7 +33,7 @@
 		&::after {
 			@include pseudo;
 			@include wh (9px);
-			@include pos (absolute, $t: 10px, $l: -25px);
+			@include pos (absolute, $top: 10px, $left: -25px);
 
 			border-radius: 50%;
 			background-color: #E9B730;
@@ -42,7 +42,7 @@
 		&::before {
 			@include pseudo;
 			@include wh (255px, 1px);
-			@include pos (absolute, $t: -25px, $l: -25px);
+			@include pos (absolute, $top: -25px, $left: -25px);
 			background-color: #fff;
 		}
 	}
@@ -76,7 +76,7 @@
 
 	// .services__box-subtitle
 	&__box-subtitle {
-		@include font (32px, 34px, 700, false);
+		@include font (32px, 34px, 700);
 		letter-spacing: -0.006em;
 		position: relative;
 		max-width: 200px;
@@ -84,7 +84,7 @@
 		&::after {
 			@include pseudo;
 			@include wh (12px);
-			@include pos (absolute, $t: 13px, $l: -28px);
+			@include pos (absolute, $top: 13px, $left: -28px);
 			border-radius: 50%;
 			background-color: #E9B730;
 		}
@@ -92,7 +92,7 @@
 		&::before {
 			@include pseudo;
 			@include wh (340px, 2px);
-			@include pos (absolute, $t: -35px, $l: -30px);
+			@include pos (absolute, $top: -35px, $left: -30px);
 			background-color: #fff;
 		}
 	}
@@ -146,7 +146,7 @@
 
 	// .services__info-subtitle
 	&__info-subtitle {
-		@include font (28px, 33px, false, false);
+		@include font (28px, 33px);
 		letter-spacing: -0.03em;
 		color: #22356F;
 		margin-bottom: 30px;
@@ -154,7 +154,7 @@
 
 	// .services__info-text
 	&__info-text {
-		@include font (16px, 25px, false, false);
+		@include font (16px, 25px);
 		letter-spacing: -0.03em;
 		color: rgba(34, 53, 111, 0.5);
 	}

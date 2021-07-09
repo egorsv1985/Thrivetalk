@@ -108,14 +108,14 @@ function css(cb) {
 
 
         }))
-        .pipe(postcss(
-            [
-                pxtorem({
-                    propList: ['*'],
-                    mediaQuery: true,
-                }),
-            ],
-        ))
+        // .pipe(postcss(
+        //     [
+        //         pxtorem({
+        //             propList: ['*'],
+        //             mediaQuery: true,
+        //         }),
+        //     ],
+        // ))
 
         .pipe(autoprefixer({
             cascade: true

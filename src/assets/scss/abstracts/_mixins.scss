@@ -1,9 +1,9 @@
-@mixin flex ($jc: null, $ai: null, $fw:null, $fd: null) {
+@mixin flex ($justify-content: null, $align-items: null, $flex-wrap:null, $flex-direction: null) {
 	display: flex;
-	justify-content: $jc;
-	align-items: $ai;
-	flex-wrap: $fw;
-	flex-direction: $fd;
+	justify-content: $justify-content;
+	align-items: $align-items;
+	flex-wrap: $flex-wrap;
+	flex-direction: $flex-direction;
 }
 
 @mixin pseudo ($content: '') {
@@ -11,40 +11,21 @@
 	display: block;
 }
 
-
-@mixin pos-px ($position: null, $t: null, $b: null, $l: null, $r: null) {
+@mixin pos ($position: null, $top: null, $bottom: null, $left: null, $right: null) {
 	position: $position;
-	top: #{$t}px;
-	bottom: #{$b}px;
-	left: #{$l}px;
-	right: #{$r}px;
-}
-
-@mixin pos ($position: null, $t: null, $b: null, $l: null, $r: null) {
-	position: $position;
-	top: $t;
-	bottom: $b;
-	left: $l;
-	right: $r;
+	top: $top;
+	bottom: $bottom;
+	left: $left;
+	right: $right;
 }
 
 
-@mixin font ($font-size: $font-size, $line-height: $line-height, $font-weight: $font-weight, $text-align: $text-align) {
-	@if $font-size {
-		font-size: $font-size;
-	}
-
-	@if $line-height {
-		line-height: $line-height;
-	}
-
-	@if $font-weight {
-		font-weight: $font-weight;
-	}
-
-	@if $text-align {
-		text-align: $text-align;
-	}
+@mixin font ($font-size: 1rem, $line-height: 2.5em, $font-weight: null, $text-align: null, $text-transform: null) {
+	font-size: $font-size;
+	line-height: $line-height;
+	text-transform: $text-transform;
+	font-weight: $font-weight;
+	text-align: $text-align;
 }
 
 @mixin background ($img) {
@@ -55,10 +36,10 @@
 }
 
 
-@mixin border($bw: null, $bs: solid, $bc: null) {
-	border-width: $bw;
-	border-style: $bs;
-	border-color: $bc;
+@mixin border($border-width: null, $border-style: solid, $border-color: null) {
+	border-width: $border-width;
+	border-style: $border-style;
+	border-color: $border-color;
 }
 
 @mixin colors($text, $background, $border) {
@@ -70,4 +51,8 @@
 @mixin wh ($width: $width, $height: $width) {
 	width: $width;
 	height: $height;
+}
+@mixin wh-px ($width: $width, $height: $width) {
+	width: #{$width}px;
+	height: #{$height}px;	
 }

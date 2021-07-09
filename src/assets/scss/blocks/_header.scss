@@ -3,51 +3,62 @@
 	min-width: 100%;
 	min-height: 100vh;
 	position: relative;
+	padding: 0 0 0 50px;
+	overflow: hidden;
 
-	// @include background ($img: url("../images/header/header__bg.jpg"));
-	// background-position: 50px 100px;
+	&::before {
+		@include background ($img: url("../images/header/headerBackground.svg"));
+		@include pseudo;
+		@include wh-px (743, 824);
+		@include pos (absolute, $top: -40px, $right: -30px);
+	}
+
 
 	// .header__top
 	&__top {
 		padding: 20px 0px 0px 0;
 		@include flex (space-between, center);
-		margin-bottom: 175px;
-
+		margin-bottom: 165px;
 	}
 
 	// .header__subtitle
 	&__subtitle {
-		@include font (24px, 27px, 500, false);
+		@include font (24px, 1.9, 500);
 		letter-spacing: -0.035em;
 		color: #62D0DF;
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 
 		&--up {
 			margin-bottom: 0;
 		}
 	}
 
-
+	&__nav {
+		@media only screen and (max-width: 1150px) {
+			display: none;
+		}
+	}
 
 	// .header__btn
 	&__btn {
-		@include flex (center, center);
-		@include wh (150px, 50px);
-		@include font (14px, 16px, false, false);
+		@include flex ($align-items: center);
+		@include wh-px (150, 50);
+		@include font (14px, 1.15);
 		background-color: #62D0DF;
 		z-index: 10;
-
+		letter-spacing: -0.02em;
+		padding-left: 30px;
 		border-radius: 50px;
 	}
 
 	// .header__content
-&__wrapper {
-	display: flex;
-}
+	&__wrapper {
+		display: flex;
+	}
 
 	// .header__wrap
-	&__wrap {
-		@include flex ($fd: column);
+	&__inner {
+		@include flex ($flex-direction: column);
 		max-width: 490px;
 		// padding-left: 50px;
 	}
@@ -62,17 +73,17 @@
 
 	// .header__text
 	&__text {
-		margin-bottom: 50px;
+		margin-bottom: 55px;
 	}
 
-	&__inner {
+	&__wrap {
 		@include flex (space-between, center, wrap);
 		max-width: 315px;
 	}
 
 	// .header__link
 	&__link {
-		@include font (16px, 23px, false, center);
+		@include font (16px, 1.4, $text-align: center);
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
 
@@ -90,19 +101,6 @@
 		}
 	}
 
-	// .header__img-box
-	&__img-box {
-		
-		// &::before {
-		// 	@include pseudo;
-		// 	@include background ($img: url("../images/header/headerBackground.svg"));
-		// 	@include wh (704px, 802px);
-		// 	@include pos (absolute, $t: -130px, $r: -250px);
-		// }
-	}
-
-	
-
 	// .header__img
 	&__img {
 		&:first-child {
@@ -110,8 +108,48 @@
 		}
 
 		@include wh (743px, 824px);
-		@include pos (absolute, $t:0, $r:0);
+		@include pos (absolute, $top:0, $right:0);
 
 		// z-index: 1;
+	}
+
+	@media only screen and (max-width: 1150px) {
+
+		&__burger-line {
+			@include wh-px (35, 2);
+			background-color: $burger-color;
+			position: relative;
+			display: block;
+			transition: all .7s ease-in-out;
+
+			&::after,
+			&::before {
+				@include pseudo;
+				@include wh-px (35, 2);
+				@include pos (absolute, $right: 0);
+				background-color: $burger-color;
+			}
+
+			&::after {
+				top: 10px;
+				width: 30px;
+			}
+
+			&::before {
+				top: -10px;
+				width: 40px;
+			}
+		}
+	}
+
+	&__burger-btn {
+		@include pos (fixed, $top: 15px, $left: 25px);
+		@include wh(50px);
+		display: none;
+		z-index: 1;
+
+		@media only screen and (max-width: 1368px) {
+			display: block;
+		}
 	}
 }

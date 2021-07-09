@@ -1,8 +1,9 @@
 // abstracts
+
 @import "./abstracts/mixins";
+@import "./abstracts/variables";
 // base
 @import "./base/normalize";
-
 @import "./base/fonts";
 
 
@@ -10,8 +11,12 @@
 @import "./components/nav";
 @import "./components/title";
 @import "./components/text";
-// @import "./components/box";
-// @import "./components/info";
+@import "./components/burger-active";
+@import "./components/burger";
+@import "./components/info";
+@import "./components/box";
+
+
 
 // block
 @import "./blocks/header";
