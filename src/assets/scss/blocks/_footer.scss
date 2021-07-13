@@ -5,32 +5,72 @@
 		display: grid;
 		grid-template-columns: 570px 1fr;
 		grid-template-rows: 380px;
-
+		@media only screen and (max-width: 1100px) {
+			grid-template-columns: 1fr;
+		grid-template-rows: 380px;
+		}
 	}
 
 	// .footer__img
-	&__img {}
+	&__img {
+		object-fit: cover;
+		@include wh (100%);
+		max-height: 380px;
+	}
 
-	// .footer__wrap
-	&__wrap {
+	// .footer__row
+	&__row {
 		@include flex ();
 		padding: 100px 0 0 68px;
-
+		@media only screen and (max-width: 1180px) {
+			padding-left: 30px;
+		}
+		@media only screen and (max-width: 1100px) {
+			justify-content: center;
+			margin-bottom: 20px;
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 480px) {
+			flex-direction: column;
+			align-items: center;
+			padding-top: 50px;
+		}
 	}
 
-	// .footer__list
-	&__list {
-		@include flex ();
-	}
+	
 
-	// .footer__item 
-	&__item {
+	// .footer__column 
+	&__column {
 		max-width: 175px;
+		@include flex ($flex-direction: column);
+		@media only screen and (max-width: 480px) {
+			
+			align-items:center
+		}
 		
 	}
 
-	&__item+&__item {
+	&__column+&__column {
 		margin-left: 90px;
+		@media only screen and (max-width: 1260px) {
+			margin-left: 50px;
+		}
+		@media only screen and (max-width: 1180px) {
+			margin-left: 20px;
+		}
+		@media only screen and (max-width: 1100px) {
+			margin-left: 90px;
+		}
+		@media only screen and (max-width: 650px) {
+			margin-left: 50px;
+		}
+		@media only screen and (max-width: 550px) {
+			margin-left: 20px;
+		}
+		@media only screen and (max-width: 480px) {
+			margin-left: 0;
+			margin-top: 20px;
+		}
 	}
 
 	// .footer__title
@@ -40,6 +80,9 @@
 		text-transform: uppercase;
 		color: #22356F;
 		margin-bottom: 50px;
+		@media only screen and (max-width: 480px) {
+			margin-bottom: 25px;
+		}
 	}
 
 	// .footer__text
@@ -74,7 +117,12 @@
 	&__bottom {
 		height: 80px;
 		background-color: #62D0DF;
-		padding: 30px 0 0 200px;
+		padding-left: 200px;
+		@include flex ($align-items: center);
+		@media only screen and (max-width: 480px) {
+			padding-left: 0;
+			justify-content: center;
+		}
 	}
 
 	// .footer__small
@@ -85,7 +133,8 @@
 		&::after {
 			content: '©';
 			display: block;
-			@include pos (absolute, $top: 7px, $left: -20px);
+			@include pos (absolute, $top: 3px, $left: -20px);
+			
 		}
 	}
 }
