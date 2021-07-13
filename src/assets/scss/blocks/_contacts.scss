@@ -17,20 +17,20 @@
 
 	// .contacts__title
 	&__title {
-		@include font (16px, 12px, false, false);
+		@include font (16px, 12px);
 		letter-spacing: 0.06em;
 		margin-bottom: 222px;
 	}
 
 	// .contacts__subtitlee
 	&__subtitlee {
-		@include font (64px, 94px, 700, false);
+		@include font (64px, 94px, 700);
 		margin-bottom: 50px;
 	}
 
 	// .contacts__text
 	&__text {
-		@include font (36px, 53px, false, false);
+		@include font (36px, 53px);
 		letter-spacing: -0.005em;
 		margin-bottom: 80px;
 		max-width: 550px;
@@ -38,7 +38,7 @@
 
 	// .contacts__link
 	&__link {
-		@include font (16px, 23px, 700, false);
+		@include font (16px, 23px, 700);
 		letter-spacing: 0.1em;
 
 		color: #62D0DF;
