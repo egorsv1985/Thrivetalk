@@ -11,16 +11,6 @@
 		}
 	}
 
-	// .home__wraper
-	&__wrapper {
-		@include flex ();
-		@media only screen and (max-width: 920px) {
-			@include flex (center, center, $flex-direction: column);
-		}
-		
-
-	}
-
 	&__inner {
 		max-width: 575px;
 		@include flex (center, $flex-direction: column);
