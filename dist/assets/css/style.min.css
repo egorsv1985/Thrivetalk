@@ -736,6 +736,14 @@ template {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 360px;
     margin-bottom: 120px; }
+    @media only screen and (max-width: 1050px) {
+      .services__block {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 360px); } }
+    @media only screen and (max-width: 576px) {
+      .services__block {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 360px); } }
   .services__item {
     padding: 95px 10px 0;
     position: relative;
@@ -829,6 +837,11 @@ template {
   grid-template-columns: 480px 1fr;
   grid-template-rows: 800px;
   gap: 95px; }
+  @media only screen and (max-width: 1050px) {
+    .blog__grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 400px 1fr;
+      gap: 30px; } }
 
 .blog__img {
   object-fit: cover;
@@ -837,29 +850,39 @@ template {
   max-height: 800px; }
 
 .blog__inner {
-  padding: 45px 10px 0;
-  max-width: 700px;
+  padding: 60px 10px 0;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
-  @media only screen and (max-width: 920px) {
+  flex-direction: column;
+  align-items: center; }
+  @media only screen and (max-width: 1050px) {
     .blog__inner {
       padding: 20px 10px; } }
 
 .blog__title {
   font-size: 16px;
-  line-height: 0.75;
+  line-height: 0.75px;
   letter-spacing: 0.8px;
-  margin-bottom: 235px; }
+  margin-bottom: 225px; }
+  @media only screen and (max-width: 1050px) {
+    .blog__title {
+      margin-bottom: 30px; } }
 
 .blog__text {
   font-size: 36px;
   line-height: 60px;
   font-weight: 700;
   letter-spacing: -0.4px;
-  font-size: 36px;
   max-width: 676px;
-  margin-bottom: 140px; }
+  margin-bottom: 145px; }
+  @media only screen and (max-width: 1050px) {
+    .blog__text {
+      margin-bottom: 30px;
+      text-align: center; } }
+  @media only screen and (max-width: 460px) {
+    .blog__text {
+      font-size: 30px; } }
 
 .contacts__grid {
   display: grid;
