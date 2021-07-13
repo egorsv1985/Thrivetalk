@@ -1,17 +1,15 @@
 .text {
 
 	@include font (24px, 44px);
-	
-	
-&--darkblue {
 	color: #22356F;
+	
+	
 
-}
 	&--blue {
 		color: 6CD3E1;
 	}
 
-	&--white {
+	&--light {
 		color: #FFF;
 	}
 
@@ -19,7 +17,7 @@
 		color: #FAB63E;
 	}
 	&--bold {
-		@include font (24px, $font-weight: 700);
+		@include font (24px, 40px, 700);
 	}
 
 }
