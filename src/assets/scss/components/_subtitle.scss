@@ -1,0 +1,10 @@
+.subtitle {
+	@include font (32px, 36px, 700, center);
+		letter-spacing: -0.006em;
+		position: relative;
+		display: inline-block;
+		&--dark-blue {
+			color: #22356F;
+		}
+		
+}
