@@ -15,7 +15,7 @@
 		&::after {
 			@include pseudo;
 			@include wh (9px);
-			@include pos (absolute, $t: 15px, $l: 45px);
+			@include pos (absolute, $top: 15px, $left: 45px);
 			border-radius: 50%;
 			background-color: #E9B730;
 		}
@@ -23,7 +23,7 @@
 		&::before {
 			@include pseudo;
 			@include wh (255px, 1px);
-			@include pos (absolute, $t: -25px, $l: 55px);
+			@include pos (absolute, $top: -25px, $left: 55px);
 			background-color: #fff;
 		}
 	}
