@@ -24,6 +24,7 @@ const notify = require('gulp-notify'); //предоставляет информ
 const browserSync = require('browser-sync').create(); // для запуска сервера и перезагрузки страницы при внесении изменений
 
 
+
 // Пути 
 const srcPath = 'src/';
 const distPath = 'dist/';
@@ -65,6 +66,14 @@ const jsFiles = [
 
 // TASKS
 // объявляем функции под сборки (все пути относительные)
+
+// !!!!!!! Сделано для Deploy  проекта на GitHub pages
+var ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
+});
 
 // Локальный сервер
 function serve() {
